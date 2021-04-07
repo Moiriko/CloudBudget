@@ -5,7 +5,7 @@
     width: $width;
     line-height: $line-height;
 }
-@mixin font1 ($color, $size, $weight, $line-height) {
+@mixin font1 ($color, $size, $width, $line-height) {
     color: $color;
     font-size: $size;
     width: $width;
