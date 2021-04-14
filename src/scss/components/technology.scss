@@ -1,0 +1,31 @@
+.technology{
+    background-color:$colorWhite;
+    &__title{
+        text-align: center;
+        padding: 63px 165px;
+        @include font1($colorBlack,36px,600,43px);
+        
+    }
+    &__row{
+        align-items: center;
+    }
+    &__item{
+        width: 191px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 69px;
+        
+    }
+    &__text{
+        text-align: center;
+        @include font1($colorBlack,18px,600,22px);
+        margin-top: 30px;
+    }
+    &__description{
+        text-align: center;
+        @include font1($colorBlack,12px,400,14px);
+        margin-top:10px;
+        margin-bottom: 108px;
+    }
+}
