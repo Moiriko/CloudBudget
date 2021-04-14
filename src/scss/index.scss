@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import "./reset.scss";
-@import "./columns.scss";
-@import "./variables.scss";
-@import "./mixins.scss";
-@import "./base.scss";
-@import "./components/header.scss";
-@import "./components/hero.scss";
+@import "./_reset.scss";
+@import "./_columns.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_base.scss";
+@import "./components/_header.scss";
+@import "./components/_hero.scss";
+@import "./components/_overview.scss";
+@import "./components/_features.scss";
 
-@import "./components/footer.scss";
+@import "./components/_footer.scss";
 @import "./media/index.scss";
 
 

@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     box-sizing: border-box;
     font-family: $font-lato;
@@ -7,6 +10,11 @@ img{
 }
 a{
     text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+    transition: 0.5s;
 }
 .container{
     max-width: 1100px;
