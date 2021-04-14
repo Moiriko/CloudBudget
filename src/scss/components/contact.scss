@@ -1,0 +1,70 @@
+.contact{
+    background-color: $colorWhite;
+    &__items{
+        max-width: 434px;
+    }
+    &__text{
+        @include font1($colorBlack,36px,600,43px);
+        padding-top: 117px;
+    }
+    &__description{
+        @include font1($colorBlack,14px,400,20px);
+        margin-top: 50px;
+    }
+    &__form{
+        padding-top: 117px;
+        
+    }
+    &__input,&__input3{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(19, 39, 67, 0.5);
+        border-radius: 6px;
+        width: 235px;
+        height: 60px;
+    }
+    &__input,&__input3{
+        padding-left: 31px;
+    }
+    &__input2{
+        height: 60px;
+        border-radius: 6px;
+        width: 540px;
+        padding-left: 31px;
+        margin-top: 24px;
+        font-size: 16px;
+        
+    }
+    &__input3{
+        margin-left: 30px;
+    }
+   &__button{
+    @include font1($colorWhite,14px,400,17px);
+    background-color: $colorRed;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 17px 34px;
+    margin-bottom: 123px;
+    margin-top: 27px;
+    cursor: pointer;
+}
+    &__select{
+        margin-top: 24px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(19, 39, 67, 0.5);
+        border-radius: 6px;
+        height: 60px;
+        padding: 21px 418px 20px 31px;
+        
+    }
+}
+.contact__button:hover{
+    background-color: #ce414f;
+    
+}

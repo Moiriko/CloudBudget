@@ -1,0 +1,28 @@
+.footer{
+    background-color: $colorWhite-grey;
+    &__row{
+        padding-top: 85px;
+    }
+    &__address, &__services,&__intouch,&__support{
+        @include font1($colorLightBlack,18px,600,20px);
+        margin-bottom: 33px;
+    }
+    &__street,&__copyright,&__list,&__link,&__phone{
+        @include font($colorLightBlack,12px,400,210px,18px);
+    }
+    &__copyright{
+        margin-top: 141px;
+        margin-bottom: 86px;
+    }
+    &__list{
+        margin-bottom:1px;
+    }
+    &__phone{
+        margin-top: 11px;
+    }
+}
+.icon__row{
+    max-width: 70px;
+    justify-content: space-between;
+    margin-top: 22px;
+}
