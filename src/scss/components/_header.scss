@@ -1,0 +1,82 @@
+.header{
+    position: absolute;
+    text-transform: uppercase;
+    @include font1 ($colorWhite, 14px, 700, 1.2em);
+    padding-top: 58px;
+    width: 100%;
+    z-index: 1;
+    &__row{
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+            display: block;
+            display: flex;
+            @include font1 ($colorWhite, 18px, 700, 1.2em);
+            margin-left: 10px;
+            &__img{
+                display: block;
+            }
+            &__row{
+                align-items: center;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+    }
+    &__menu{
+        justify-content: space-between;
+        width: 450px;
+    }
+    &__nav{
+        display: block;
+        transition: 0.5s;
+        @include font1 ($colorWhite, 14px, 700, 1.2em);
+        &:hover{
+            transform: scale(1.15);
+            cursor: pointer;
+            -webkit-text-stroke: 1px $colorRed;
+            // -webkit-text-fill-color: $colorRed;
+        }
+    }
+    &__row__login{
+        display: block;
+        display: flex;
+    }
+    &__list{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        @include font1 ($colorWhite, 14px, 700, 1.2em);   
+    }
+    &__option{
+        @include font1 ($colorWhite, 14px, 700, 1.2em);
+        // background-position: 0 1px;
+        // background: url(../img/flag.svg) no-repeat;
+        // background-size: 20px;
+        // padding-left: 20px;
+
+        // &:nth-child(1)::before{
+        //     content: "";
+        //     background: url(../img/flag.svg) no-repeat;
+        //     width: 10px;
+        //     height: 10px;
+        //     background-size: contain;
+        //     padding-left: 20px;
+
+        // }
+    }
+    &__login{
+        @include font1 ($colorWhite, 14px, 700, 1.2em);
+        padding: 11px 29px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        border-radius: 6px;
+        outline: none;
+        transition: 0.5s;
+        margin-left: 29px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

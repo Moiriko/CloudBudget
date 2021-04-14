@@ -1,0 +1,36 @@
+.overview{
+    background: $colorWhite;
+    padding: 95px 0;
+    &__title{
+        @include font1 ($colorBlack, 36px, 700, 1.2em);
+    }
+    &__description{
+        @include font  ($colorBlack, 14px, 400, 80%, 1.4em);
+        text-align: justify;
+        margin: 24px 0 15px;
+    }
+    &__link{
+        @include font1 ($colorRed, 14px, 400, 1.4em);
+
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__video{
+        border-radius: 15px;
+        outline: none;
+        position: relative;
+        &::before{
+            content: "";
+            background: url(../img/PlayButton.png) no-repeat;
+            background-size: cover;
+            left: -5%;
+            top: -59%;
+            width: 110px;
+            height: 110px;
+            position: absolute;
+        }
+    }
+}

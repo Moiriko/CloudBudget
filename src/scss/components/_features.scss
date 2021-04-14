@@ -1,0 +1,51 @@
+.features{
+    text-align: center;
+    background: $colorWhite-grey;
+    padding: 63px 0 124px;
+    &__title{
+        @include font1 ($colorBlack, 36px, 700, 1.4em);
+        margin-bottom: 63px;
+    }
+    &__row{
+        justify-content: space-evenly;
+    }
+    &__img1{
+        position: relative;
+    }
+    &__img{
+        max-width: 95%;
+    }
+    &__item{
+        z-index: 1;
+        position: absolute;
+        bottom: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 33px 22px 25px;
+        background: $colorWhite;
+        max-width: 295px;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: 0.5s;
+        &:hover{
+            padding: 40px;
+        }
+    }
+    &__text{
+        min-width: 225px;
+    }
+    &__name{
+        @include font1 ($colorLightBlack, 18px, 700, 1.2em);
+        margin: auto;
+    }
+    &__description{
+        @include font1  ($colorLightBlack, 12px, 400, 1.5em);
+        margin: 20px auto 15px;
+    }
+    &__link{
+        @include font1 ($colorRed, 14px, 400, 1.5em);
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

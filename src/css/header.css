@@ -1,0 +1,12 @@
+.header {
+  position: absolute;
+  display: block;
+  text-transform: uppercase;
+}
+
+@in font1 ($colorWhite, 14px, 700, 1em)
+    &__logo {
+  .header__text {
+    display: block;
+  }
+}

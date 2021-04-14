@@ -1,32 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/index.css" />
     <title>CloudBudget</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-
+      <div class="container">
+        <div class="header__row row">
+            <a class="header__logo__row row">
+                <img src="./src/img/cloud.svg" alt="" class="header__logo__img">
+              <span class="header__logo">CloudBudget</span>
+            </a>
+            <nav class="header__menu row">
+                <a class="header__nav" href="#overview">OVERVIEW</a>
+                <a class="header__nav" href="#features">FEATURES</a>
+                <a class="header__nav" href="#technology">TECHNOLOGY</a>
+                <a class="header__nav" href="#contact">CONTACT</a>
+                <a class="header__nav" href="#hero">Sign up</a>
+              </nav>
+              <div class="header__row__login">
+                <select class="header__list" name="language" size="1" >
+                  <option class="header__option" value="USA">
+                     EN
+                  </option>
+                  <option class="header__option" value="USA">
+                    USA
+                  </option>
+                  <option class="header__option" value="RUS">
+                    RUS
+                  </option>
+                </select>
+                <form action="#">
+                  <input class="header__login" type="submit" value="LOGIN" />
+                </form>
+              </div>
         </div>
+        </div>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="container">
-
-
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__items row">
+            <h1 class="hero__title">CloudBudget</h1>
+            <p class="hero__text">
+              Cloud budget management for everyone. Only €69.95 a Month After a 7
+              Day Trial of  
+            </p>
+            <span class="hero__text">Up to €4.99</span>
+            <button class="hero__button">Sign Up</button>
+          </div>
+        </div>
+      </section>
+      <section class="overview" id="overview">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 overview__left">
+              <h2 class="overview__title">
+                Easy to Use Cloud Budget Management Software
+              </h2>
+              <p class="overview__description">
+                Our software is made so you can access and manage your budget and expenses online at any time from any device. It provides detailed income and expense reports with graphs so you can easilly see your spending patterns and budget at a glance. Read below to find out more.
+              </p>
+              <a href="#" class="overview__link">Learn More</a>
             </div>
-        </section>
-
+            <div class="col-6">
+              <video class="overview__video" controls width="445" height="310" poster="./src/img/overview_video.png" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <source type="video/mp4" src="./src/video/Жанулька - Кис кис кис кис я котик ты котик.webm">
+               </video>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="features__title">
+            Features
+          </h2>
+        <div class="row features__row">
+          <div class="features__img1">
+            <img src="./src/img/features1.png" alt="" class="features__img" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+            <div class="features__item">
+              <div class="features__text">
+                <h5 class="features__name">
+                  Supports All Currencies and Cards
+                </h5>
+                <p class="features__description">
+                  We support all popular currencies and is fully customizable to add
+                </p>
+                <a href="#" class="features__link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="features__img1">
+            <img src="./src/img/features2.png" alt="" class="features__img" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">>
+            <div class="features__item">
+              <div class="features__text">
+                <h5 class="features__name">
+                  Manage your expenses on the go
+                </h5>
+                <p class="features__description">
+              You can access your account from anywhere in the world on any device
+                </p>
+                <a href="#" class="features__link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="features__img1">
+            <img src="./src/img/features3.png" alt="" class="features__img" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">        >
+            <div class="features__item">
+              <div class="features__text">
+                <h5 class="features__name">
+                  Cloud Budget Management Software
+                </h5>
+                <p class="features__description">
+                  Our software is made so you can access and manage your budget
+                </p>
+                <a href="#" class="features__link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-
-            
-        </div>
+      <div class="container"></div>
     </footer>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
