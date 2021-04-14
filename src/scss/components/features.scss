@@ -1,7 +1,8 @@
 .features{
     text-align: center;
     background: $colorWhite-grey;
-    padding: 63px 0 124px;
+    background-size: cover;
+    padding: 63px 0 224px;
     &__title{
         @include font1 ($colorBlack, 36px, 700, 1.4em);
         margin-bottom: 63px;
